@@ -1,1 +1,15 @@
-style goes here
+body {
+  background-color: black;
+}
+
+box {
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  background-color: red;
+}
+
+p {
+  font-family: comic sans;
+  font-size: 14px;
+}
