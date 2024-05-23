@@ -2,42 +2,71 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #f0f0f0;
+	background-color: #202020;
 }
 
 .header {
-	background-color: #001f3f;
-	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	background-color: #bd0202;
 	padding: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.welcome {
+	color: #fff;
 	text-align: left;
 }
 
+.language {
+	display: grid;
+	justify-content: right;
+}
+
+.language-button {
+	background-color: transparent;
+	padding: 0px 0px;
+	border-radius: 50%;
+	width: 54px;
+	height: 54px;
+	border: 0px;
+}
+
+.language-button .active{
+	border: 2px solid black;
+}
+
+.language-image {
+	width: 50px;
+	height: auto;
+}
+
 .container {
-    display: flex;
+	background-color: #f4f4f4;
+	
+	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
-.item {
+.picture-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border: 2px solid black;
+}
+
+.picture {
+	margin: 20px;
+	padding: 10px;
+	border: 2px solid black;
 	text-align: center;
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	flex: 1;
-	margin: 10px;
 }
 
-.item img {
-	max-width: 100%;
-	border-radius: 4px;
-}
-
-.item a {
-	display: block;
-	margin-top: 10px;
-	color: #007BFF;
-	text-decoration: none;
-	font-weight: bold;
+#intro-text {
+	margin-bottom: 20px;
 }
