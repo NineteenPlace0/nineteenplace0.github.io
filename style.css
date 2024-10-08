@@ -5,6 +5,7 @@ body {
 	background-color: #202020;
 }
 
+/* CONTAINERS */
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -14,11 +15,61 @@ body {
 	padding-right: 5%;
 }
 
+.container {
+	background-color: #f4f4f4;
+    padding: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.container2 {
+	display: flex;
+	justify-content: space-around;
+	padding: 5%;
+}
+
+#picture-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #d6d6d6;
+	border-radius: 25px;
+}
+
+
+/* CONTENT */
+/* - header */
 .welcome {
 	color: #fff;
 	text-align: left;
 }
 
+.font {
+	font-family: "Lucida Handwriting", Lucida, cursive;
+}
+
+/* - introduction */
+.introduction{
+	padding: 3%;
+	text-align: left;
+	border-radius: 25px;
+	background-color: #d6d6d6;
+	width: 50%;
+}
+
+.photo {
+	width: 200px;
+	height: 200px;
+	border: 5px solid  #bd0202;
+	border-radius: 50%;
+	margin-left: 2%;
+}
+
+#intro-title {
+	font-size: 32px;
+}
+
+/* - language */
 .language {
 	display: grid;
 	justify-content: right;
@@ -30,43 +81,34 @@ body {
 	border-radius: 50%;
 	width: 54px;
 	height: 54px;
-	border: 0px;
 }
 
-.language-button .active{
-	border: 2px solid black;
+.language-inactive {
+	opacity: 0.5;
+}
+
+.language-active {
+	button[:disabled];
 }
 
 .language-image {
+	border-radius: 25px;
 	width: 50px;
 	height: auto;
 }
 
-.container {
-	background-color: #f4f4f4;
-	
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
-.picture-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	border: 2px solid black;
-}
-
+/* - projects */
 .picture {
+	width: 200px;
 	margin: 20px;
 	padding: 10px;
-	border: 2px solid black;
+	border: 3px solid black;
+	border-radius: 25px;
 	text-align: center;
+	color: #bd0202;
+	background-color: #ffffff;
 }
 
-#intro-text {
-	margin-bottom: 20px;
+.picture:hover {
+	border-color: #bd0202;
 }
